@@ -1,0 +1,3 @@
+ps_home_homepage:
+    path:     /
+    defaults: { _controller: PSHomeBundle:Default:index }
