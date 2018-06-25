@@ -24,7 +24,9 @@ class DefaultController extends Controller
 		
 		if ($request->isMethod('POST')) {
 			if ($form->handleRequest($request)->isValid()){
-				$information->setTypeInformation("file");
+				
+				
+				
 				$em->persist($information);
 				$em->flush();
 

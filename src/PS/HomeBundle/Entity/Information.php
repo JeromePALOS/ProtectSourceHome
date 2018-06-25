@@ -7,6 +7,8 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\Validator\Constraints as Assert;
 
+use SpecShaper\EncryptBundle\Annotations\Encrypted;
+
 /**
  * Information
  *
@@ -46,6 +48,7 @@ class Information
     /**
      * @var string
      *
+	 * @Encrypted
      * @ORM\Column(name="text", type="text", nullable=true)
      */
     private $text;

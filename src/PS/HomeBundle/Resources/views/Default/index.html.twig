@@ -11,14 +11,33 @@
 		{{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
 
 			{{ form_errors(form) }}
-
 			<div class="form-group">
 
-				{{ form_label(form.keyProject, "Project Key", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+				{{ form_label(form.keyProject, "Key project", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
 				{{ form_errors(form.keyProject) }}
 
 				<div class="col-sm-4">
 					{{ form_widget(form.keyProject, {'attr': {'class': 'form-control'}}) }}
+				</div>
+			</div>
+			
+			
+			<div class="form-group">
+
+				{{ form_label(form.typeInformation, "Information type", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+				{{ form_errors(form.typeInformation) }}
+
+				<div class="col-sm-4">
+					{{ form_widget(form.typeInformation, {'attr': {'class': 'form-control'}}) }}
+				</div>
+			</div>
+
+			
+			<div class="form-group" id="text">
+				{{ form_label(form.text, "", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+				{{ form_errors(form.text) }}
+				<div class="col-sm-4">
+					{{ form_widget(form.text, {'attr': {'class': 'form-control'}}) }}
 				</div>
 			</div>
 
@@ -39,4 +58,25 @@
 
 {% endblock %}
 
-
+{% block javascripts %}
+	{{ parent() }}
+	<script>
+		function display(){
+			if(this.value == "text"){
+				document.getElementById('files').style.display = "none";
+				document.getElementById('text').style.display = "block";
+			}else if(this.value == "file"){
+				document.getElementById('files').style.display = "block";
+				document.getElementById('text').style.display = "none";
+			
+			}
+		}
+		
+		var select = document.getElementById('ps_projectbundle_information_typeInformation');
+		document.getElementById('files').style.display = "none";
+		select.addEventListener("change", display, false);
+		
+	
+	</script>
+	
+{% endblock %}
