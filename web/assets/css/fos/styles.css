@@ -1,0 +1,43 @@
+/**#connection**/
+#connection{
+	background-color: #eee;
+	padding-bottom: 10px;
+}
+
+#connection label{
+	padding-left: 10px;
+}
+#connection .form-check{
+	padding-left: 10px;
+}
+
+.profile li{
+	list-style-type: none;
+}
+
+.profile ul{
+	
+	margin-top: 20px;
+}
+
+/**btn**/
+.btn-blue{
+	background-image: -webkit-linear-gradient(top, #4c82c4, #1e395b);
+	background-image: -moz-linear-gradient(top, #4c82c4, #1e395b);
+	background-image: -ms-linear-gradient(top, #4c82c4, #1e395b);
+	background-image: -o-linear-gradient(top, #4c82c4, #1e395b);
+	background-image: linear-gradient(to bottom, #4c82c4, #1e395b);
+  
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 20px;
+	border: none;
+	
+	padding: 3px 15px 3px 15px;
+
+}
+.btn-blue:hover {
+	background: #1e395b;
+	color: #ffffff;
+	text-decoration: none;
+}

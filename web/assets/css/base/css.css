@@ -1,0 +1,26 @@
+/**web/assets/css/base/css.css**/
+/**Fichier de base**/
+
+
+
+.notice {
+    padding: 3px;
+    background-color: #fafafa;
+    border-left: 6px solid #7f7f84;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+       -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+            box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+	
+}
+.error {
+    padding: 3px;
+    background-color: #fafafa;
+    border-left: 6px solid #a83403;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+       -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+            box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+	
+}
+

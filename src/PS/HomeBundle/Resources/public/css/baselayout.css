@@ -1,0 +1,322 @@
+@font-face {
+ font-family: "Garamont" !important;
+ src: url("https://fonts.googleapis.com/css?family=EB+Garamond"); 
+    }
+.container-fluid h2 {
+    font-family: "Garamont", serif;
+    font-size: 2.5rem;
+}
+body{
+    color:#303030;
+}
+.header>div>a{
+    text-decoration: none;
+    }
+.header>div>a:hover{
+    text-decoration: none;
+}
+
+.header{
+	width: 100%;
+    padding: 20px 0;
+	background-image: url("../../../assets/images/background-header-home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+.header .sign{
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 10px;
+    }
+.header .sign>a{
+    display: flex;
+    align-items: center;
+    color: #c10000;
+    font-size: 1.4rem;    
+    }
+.header .sign>a:hover{
+    text-decoration: underline #c10000;
+}
+.header .red, .header .white{
+    font-size: 3rem;
+}
+.header p{
+    display: inline;
+    color: white;
+    font-family: trebuchet MS;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.header .and{
+    color: #c10000;
+    position: relative;
+    right: 310px;
+    font-family: serif;
+    font-size: 8rem;
+}
+.header .keep{
+    position: absolute;
+    right: 0px;
+    top: 45px;
+}
+.header .send{
+    position: absolute;
+    right: 65px;
+    bottom: 40px;
+}
+.header .network{
+    display: flex;
+    flex-direction: column;    
+    margin-top: 15px;
+}
+.header .logo-hover{
+    width: 70px;
+    margin: 5px;
+}
+.header .slogan{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+}
+@media screen and (max-width: 450px) {
+    .header .slogan{
+        flex-direction: column;
+    }
+    .header .red, .header .white{
+        font-size: 2rem;
+    }
+    .header p{
+        margin: 0;
+        font-size: 1.45rem
+    }
+    .header .keep {
+        position: inherit;
+        right: 0px;
+        top: 0px;
+    }
+    .header .and{
+        position: inherit;
+        right: 0;
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+    .header .send{
+        position: inherit;
+        right: 0;
+        bottom: 0;
+    }
+}
+.footer{
+    width: 100%;
+    padding-top: 20px;
+	background-color: #303030;
+	text-align: left;
+	position: relative;
+    padding-bottom: 20px;
+    }
+.footer img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    }
+.footer .contact{
+    display: flex;
+    flex-direction: row-reverse;
+    }
+
+.red{
+    font-weight: bold;
+    color: #c10000;
+    font-family: 'Trebuchet MS','sans-serif';
+    }
+
+.white{
+    color: #bfbfbf;
+    font-size: 40px;
+    font-family: 'Garamont';
+    }
+
+.dot {
+  height: 50px;
+  width: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+    }
+
+.vl {
+    border-left: 2px solid grey;
+    margin-right: 6px;
+    margin-left: 4px;
+    }
+
+.link{
+    text-decoration: none !important;
+    color: white !important;    
+    }  
+
+.link:hover{
+    text-decoration: none !important;
+    color: white !important;
+    }
+
+.logo-hover{
+    transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    opacity: 0.8;
+    }
+
+.logo-hover:hover{
+    opacity: 1;
+    }
+.presentation h2{
+    margin-bottom: 20px;
+    position: relative;
+    left: 7%;
+    top: 40px;
+    padding: 5px 55px 5px 10px;
+    background-color: #f3f3f3;
+    -webkit-box-shadow: 8px 8px 0px -4px rgba(191,191,191,1);
+    -moz-box-shadow: 8px 8px 0px -4px rgba(191,191,191,1);
+    box-shadow: 3px 3px 0px 0px rgba(191,191,191,1);
+}
+.presentation .content{
+    display: flex;   
+    align-items: center;
+
+    background-color: #f3f3f3;
+    padding: 25px;
+    -webkit-box-shadow: 8px 8px 0px -4px rgba(191,191,191,1);
+    -moz-box-shadow: 8px 8px 0px -4px rgba(191,191,191,1);
+    box-shadow: 8px 8px 0px -4px rgba(191,191,191,1);
+   }
+.presentation .content p{
+    padding: 20px;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+.presentation .content img{
+    width: 210px;
+    height: 360px;
+}
+@media screen and (max-width: 515px) {
+    .presentation .content{
+        flex-direction: column;
+     }
+}
+.lettrine{
+    color: #c10000;    
+}
+.join-us{
+    background-color: #bfbfbf;
+}
+.join-us>div {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.join-us>div>p{
+    font-size: 1.7rem;
+    font-family: "Garamont", serif;
+    margin: 20px
+}
+.join-us>div>p>a{
+    font-family: "trebuchet MS",sans-serif;
+    color: #c10000;
+    font-weight: 800;
+}
+.section ul{
+    padding-left: 60px;
+    margin: 30px 0px;
+}
+ul>li{
+    margin: 15px;
+}
+.join-us, .section{
+    margin: 15px 0
+}
+.logo-advices{
+    display: flex;
+    align-items: baseline;
+}
+.logo-advices>img{    
+    filter: grayscale(100%);
+    transition-duration: 0.4s;
+    height: 100%;
+    margin: 10px 0;
+    padding: 0 26px;
+}
+.logo-advices>img:hover{
+    filter:grayscale(0%);
+}
+
+.information {
+    width: 100%;
+    padding: 20px 0;
+	background-image: url("../../../assets/images/background-header-home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;    
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.information h2{
+    text-align: center;
+
+}
+.btn-send {
+    padding: .5rem 3rem !important;
+    margin: 10px 0;
+    background-color: #c10000;
+    color: white;
+    cursor: pointer;
+}
+.send{
+    display: flex;
+    justify-content: flex-end;
+}
+.input-group>input{
+    border: none;
+}
+.info{
+    background-color: white;
+    color: #030642;
+    border-left: solid 1px #030642 !important;
+    cursor: pointer;
+    border-radius: 0 .25rem .25rem 0 !important;
+    transition-duration: 0.4s !important; /* Safari */
+    transition-duration: 0.4s !important;
+}
+.info .tooltiptext {
+    visibility: hidden;
+    width: 240px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    padding: 7px;
+    position: absolute;
+    z-index: 8;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -205px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: initial;
+}
+
+.info .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 86%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.info:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

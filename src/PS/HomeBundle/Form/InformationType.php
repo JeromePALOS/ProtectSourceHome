@@ -23,18 +23,8 @@ class InformationType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-			->add('keyProject',     	TextType::class, array('required' => true))
-			->add('typeInformation',				ChoiceType::class, 
-				array(
-					'choices'  => array(
-						'text' => "text",
-						'file' => "file",
-					), 
-					'required' => true,
-				)
-			)
+			->add('keyProject',     	TextType::class, array('required' => true))			
 			->add('text',     			TextareaType::class, array('required' => false))
-			->add('files', 				FilesType::class, array('required' => false, 'label' => false))
 			->add('Send',     			SubmitType::class)
 			
 			
