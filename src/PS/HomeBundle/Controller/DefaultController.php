@@ -26,24 +26,12 @@ class DefaultController extends Controller
 			if ($form->handleRequest($request)->isValid()){
 				
 				
-				
+				$information->setTypeInformation('text');
 				$em->persist($information);
 				$em->flush();
 
 				$request->getSession()->getFlashBag()->add('notice', 'Information added, thanks for your contribution.');
 
-				return $this->redirectToRoute('ps_home_homepage');
-				
-			}else{
-				$validator = $this->get('validator');
-				$listErrors = $validator->validate($information);
-
-				// Si $listErrors n'est pas vide, on affiche les erreurs
-				if(count($listErrors) > 0) {
-					$request->getSession()->getFlashBag()->add('notice', (string) $listErrors);
-				  // $listErrors est un objet, sa méthode __toString permet de lister joliement les erreurs
-				 
-				}
 			}
 				
 				 

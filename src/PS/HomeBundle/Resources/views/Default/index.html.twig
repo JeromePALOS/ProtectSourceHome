@@ -5,6 +5,15 @@
 {% endblock %}
 
 {% block body %}
+	{% for message in app.session.flashbag.get('notice') %}
+
+		<div class="alert alert-dismissible fade show alert-block fadeOutUp" role="alert">
+			<strong>Notice</strong> {{ message }}
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+	{% endfor %}
 <div class='header container-fluid'>
 	<div class='row'>
 		<a class='col-md-8 offset-md-1' href="#">			
@@ -70,6 +79,7 @@
 		<h2>Add information</h2>
 		{{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
 		{{ form_errors(form) }}
+		
 		<div class="form-group">
 			{{ form_label(form.keyProject, "Project key", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
 			{{ form_errors(form.keyProject) }}
@@ -93,6 +103,7 @@
 		<div class="form-group send">
 		{{ form_widget(form.Send, {'attr': {'class': 'btn btn-send'}}) }}
 		</div>
+		{{ form_row(form._token) }}
 		{{ form_rest(form) }}
 		{{ form_end(form) }}
 	</div>
